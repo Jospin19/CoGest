@@ -1,0 +1,497 @@
+﻿<UserControl x:Name="LoginView1" x:Class="LoginPage.Views.LoginView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LoginPage.Views"
+             mc:Ignorable="d"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             FontFamily="{DynamicResource MaterialDesignFont}" Width="900" Height="400">
+    <UserControl.Resources>
+        <Storyboard x:Key="ShowSignUp">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="StackPanelPresentSignUp">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="RectArdLogin">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-400"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-300"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-345"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="GridLogin">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-400"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-300"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-345"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ImgLogin">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BtnClose">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BtnInfo">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="ImgLogin">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="BtnClose">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="BtnInfo">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBox">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="FloatingPasswordBox1">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BtnLogin">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BtnResetLogin">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="packIcon">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="packIcon1">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="StackPanelPresentSignUp">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="RectArdLogin">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="GridLogin">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="RectArdSignUp">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="GridSignUp">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ImgLogin">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-350"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="BtnClose">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-350"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="BtnInfo">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="-350"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="StackPanelPresentLogin">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ShowLogin">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="RectArdLogin">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="GridLogin">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ImgLogin">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="BtnClose">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="BtnInfo">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="-350"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="StackPanelPresentSignUp">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="StackPanelPresentLogin">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.3" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="RectArdSignUp">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="GridSignUp">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.6" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="StackPanelPresentLogin">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="RectArdSignUp">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="400"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="300"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="345"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="GridSignUp">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.1" Value="200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="400"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="300"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="345"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="360"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.9" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="packIcon2">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBox1">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="packIcon3">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBox2">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="packIcon4">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="FloatingPasswordBox">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BtnSignUp">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BtnResetSignUp">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ImgLogin">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BtnClose">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="BtnInfo">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock1">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.9" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid>
+
+        <!--Rectangle de l'image de fond -->
+        <Rectangle Opacity="0.8" Margin="0,40,0,40" RadiusY="6" RadiusX="6">
+            <Rectangle.Effect>
+                <BlurEffect/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <ImageBrush  Stretch="UniformToFill" ImageSource="impot.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+        <!--Rectangle de la couleur transparente-->
+        <Rectangle RenderTransformOrigin="0.048,0.958" Margin="0,40,0,40" RadiusY="6" RadiusX="6" Fill="#33000000"/>
+
+
+        <!--Présentation de la partie LOGIN-->
+        <StackPanel Margin="520,10,50,0" Visibility="Hidden" x:Name="StackPanelPresentLogin">
+            <TextBlock Margin="20, 120, 20, 10" Text="Have an account ?" Foreground="White" FontSize="36" FontFamily="Bell MT" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock Margin="20, 0, 0, 30" Text="Connectez en un clic et utilisez l'application de comptabilité la plus conviviale de l'univers logiciel" Foreground="White"  FontSize="15" FontFamily="Times New Roman" TextWrapping="Wrap"/>
+
+
+            <!--Bouton de connexion-->
+            <Button x:Name="BtnCallLogin" Style="{StaticResource MaterialDesignRaisedLightButton}" Width="100" ToolTip="Resource name: MaterialDesignRaisedLightButton" Background="{x:Null}" Foreground="White" FontWeight="Normal" Click="BtnCallLogin_Click" >
+                LOGIN
+            </Button>
+        </StackPanel>
+
+
+        <!--Présentation de la partie SIGN UP-->
+        <StackPanel Margin="50,10,520,0" x:Name="StackPanelPresentSignUp">
+            <TextBlock Margin="20, 120, 20, 10" Text="Don't have an account ?" Foreground="White" FontSize="28" FontFamily="Bell MT" FontWeight="Bold" HorizontalAlignment="Center"/>
+            <TextBlock Margin="20, 0, 0, 30" Text="Créer un compte en moin de 30 Secondes  et utilisez l'application de comptabilité la plus conviviale de l'univers logiciel" Foreground="White"  FontSize="15" FontFamily="Times New Roman" TextWrapping="Wrap"/>
+
+
+            <!--Bouton de connexion-->
+            <Button x:Name="BtnCallSignUp" Style="{StaticResource MaterialDesignRaisedLightButton}" Width="100" ToolTip="Resource name: MaterialDesignRaisedLightButton" Background="{x:Null}" Foreground="White" FontWeight="Normal" Click="BtnCallSignUp_Click">
+                SIGN UP
+            </Button>
+        </StackPanel>
+
+
+        <!--Rectangle d'arrondissement de la partie LOGIN-->
+        <Rectangle Margin="400,10,50,10" Fill="White" RadiusX="6" RadiusY="6" RenderTransformOrigin="0.5,0.5" x:Name="RectArdLogin">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1" ScaleX="-1"/>
+                    <SkewTransform AngleY="0" AngleX="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+            <Rectangle.Effect>
+                <DropShadowEffect Color="DimGray" ShadowDepth="2"/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+        <!--Rectangle d'arrondissement de la partie SIGN UP-->
+        <Rectangle Margin="50,10,400,10" Fill="White" RadiusY="6" RadiusX="6"  Visibility="Hidden" x:Name="RectArdSignUp" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+            <Rectangle.Effect>
+                <DropShadowEffect Color="DimGray" ShadowDepth="2"/>
+            </Rectangle.Effect>
+
+        </Rectangle>
+
+        <!--Grid d'affichage de la partie SIGN UP-->
+        <Grid Margin="50,10,400,10"  Visibility="Hidden" x:Name="GridSignUp" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="textBlock1" Grid.Column="3" Grid.Row="3"  Text="SIGN UP" Foreground="#FF141720" FontSize="22" FontFamily="Calibri Light" FontWeight="Bold" Margin="20,13,21,0"/>
+
+            <!--Champ FullName-->
+            <materialDesign:PackIcon x:Name="packIcon2" Kind="Account" VerticalAlignment="Center" Foreground="#707070"  Grid.Row="4" Grid.Column="1"/>
+
+            <TextBox x:Name="textBox1" materialDesign:HintAssist.Hint="Floating Hint" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Width="350" Margin="0, 7" HorizontalAlignment="Left"/>
+
+            <!--Champ Email-->
+            <materialDesign:PackIcon x:Name="packIcon3" Kind="Email" VerticalAlignment="Center" Foreground="#707070"  Grid.Row="5" Grid.Column="1"/>
+
+            <TextBox x:Name="textBox2" materialDesign:HintAssist.Hint="Floating Hint" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Row="5" Grid.Column="2"  Grid.ColumnSpan="3" Width="350" Margin="0, 7" HorizontalAlignment="Left"/>
+
+            <!--Champ Password-->
+            <materialDesign:PackIcon x:Name="packIcon4" Kind="Key" VerticalAlignment="Center" Foreground="#707070"  Grid.Row="6" Grid.Column="1"/>
+
+            <PasswordBox x:Name="FloatingPasswordBox" materialDesign:HintAssist.Hint="Floating Password" materialDesign:HintAssist.Foreground="#FF2196F3" materialDesign:TextFieldAssist.UnderlineBrush="#FF2196F3" 
+                         Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Grid.Row="6" Grid.Column="2"  Grid.ColumnSpan="3" Width="350" Margin="0, 7" HorizontalAlignment="Left"/>
+
+            <Rectangle Grid.RowSpan="2" Grid.ColumnSpan="6" Fill="#FF141720" HorizontalAlignment="Left" Height="76" RadiusY="6" RadiusX="6"  VerticalAlignment="Top" Width="450"/>
+
+            <Ellipse Grid.RowSpan="4" Grid.Column="2" Grid.ColumnSpan="2" Fill="#FF141720" HorizontalAlignment="Left" Height="105" Margin="114,22,0,0"  VerticalAlignment="Top" Width="116"/>
+
+
+            <Button Style="{StaticResource MaterialDesignRaisedButton}" Width="120" ToolTip="Resource name: MaterialDesignRaisedButton" Grid.Row="7" Grid.Column="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="#FF4AC8EB" BorderBrush="#FF4AC8EB" HorizontalAlignment="Right" x:Name="BtnSignUp">
+                SIGN UP
+            </Button>
+
+            <Button Style="{StaticResource MaterialDesignRaisedButton}" Width="120" ToolTip="Resource name: MaterialDesignRaisedButton" Grid.Row="7" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="#FFEF6D4A" BorderBrush="#FFEF6D4A" HorizontalAlignment="Left" x:Name="BtnResetSignUp">
+                RESET
+            </Button>
+        </Grid>
+
+        <!--Grid d'affichage de la partie LOGIN-->
+        <Grid Margin="400,10,50,10" x:Name="GridLogin" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="textBlock" Grid.Column="3" Grid.Row="3"  Text="LOGIN" Foreground="#FF141720" FontSize="22" FontFamily="Calibri Light" FontWeight="Bold" Margin="31,13,31,0"/>
+
+            <!--Champ FullName-->
+            <materialDesign:PackIcon x:Name="packIcon" Kind="Account" VerticalAlignment="Center" Foreground="#707070"  Grid.Row="4" Grid.Column="1"/>
+
+            <TextBox x:Name="textBox" materialDesign:HintAssist.Hint="Floating Hint" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Width="350" Margin="0, 7" HorizontalAlignment="Left"/>
+
+            <!--Champ Password-->
+            <materialDesign:PackIcon x:Name="packIcon1" Kind="Key" VerticalAlignment="Center" Foreground="#707070"  Grid.Row="5" Grid.Column="1"/>
+
+            <PasswordBox x:Name="FloatingPasswordBox1" materialDesign:HintAssist.Hint="Floating Password" materialDesign:HintAssist.Foreground="#FF2196F3" materialDesign:TextFieldAssist.UnderlineBrush="#FF2196F3" 
+                         Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Grid.Row="5" Grid.Column="2"  Grid.ColumnSpan="3" Width="350" Margin="0, 7" HorizontalAlignment="Left"/>
+
+
+            <Rectangle x:Name="rectangle" Grid.RowSpan="2" Grid.ColumnSpan="6" HorizontalAlignment="Left" Height="76" RadiusY="6" RadiusX="6"  VerticalAlignment="Top" Width="450" Fill="#FF141720"/>
+
+            <Ellipse x:Name="ellipse" Grid.RowSpan="4" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="105" Margin="114,22,0,0"  VerticalAlignment="Top" Width="116" Fill="#FF141720"/>
+
+            <Button Style="{StaticResource MaterialDesignRaisedButton}" Width="120" ToolTip="Resource name: MaterialDesignRaisedButton" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2" Background="#FF4AC8EB" BorderBrush="#FF4AC8EB" HorizontalAlignment="Right" x:Name="BtnLogin">
+                LOGIN
+            </Button>
+
+            <Button Style="{StaticResource MaterialDesignRaisedButton}" Width="120" ToolTip="Resource name: MaterialDesignRaisedButton" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2" Background="#FFEF6D4A" BorderBrush="#FFEF6D4A" HorizontalAlignment="Left" x:Name="BtnResetLogin">
+                RESET
+            </Button>
+
+
+        </Grid>
+
+
+        <Ellipse HorizontalAlignment="Left"  Width="96" Height="96" Margin="584,31,0,0" VerticalAlignment="Top" x:Name="ImgLogin" RenderTransformOrigin="0.5,0.5">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <ImageBrush Stretch="UniformToFill" ImageSource="boy.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+
+        <Button x:Name="BtnClose" Style="{StaticResource MaterialDesignFloatingActionLightButton}" ToolTip="MaterialDesignFloatingActionLightButton" Height="22" Margin="685,51,180.231,321.923" Width="24" Background="#FF4AC8EB" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="Power" Height="14" Width="14"/>
+        </Button>
+        <Button x:Name="BtnInfo" Style="{StaticResource MaterialDesignFloatingActionLightButton}" ToolTip="MaterialDesignFloatingActionLightButton" Height="22" Margin="553.462,53.538,322.537,324.461" Width="24" Background="#FF4AC8EB" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <materialDesign:PackIcon Kind="InformationVariant" Height="14" Width="14"/>
+        </Button>
+    </Grid>
+</UserControl>

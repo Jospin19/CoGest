@@ -1,0 +1,118 @@
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\agrd.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\amorti.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\Bilan.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\clse1.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\clse2.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\doc.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\fbk.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\g+.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\gm.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\home.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\info.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\inst.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\int.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\journal.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\n1.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\n2.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\Patrimoine.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso1.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso2.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso4.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso5.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\pp2.jpg
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\rd.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat1.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat2.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat4.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat5.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat6.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stock.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stock1.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stock3.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\twtr.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\ventes.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\ventes1.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\whs.png
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\UserInterfacePage.exe.config
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\UserInterfacePage.exe
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\UserInterfacePage.pdb
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignColors.dll
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignColors.pdb
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\MainWindow.g.cs
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\App.g.cs
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage_Content.g.cs
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage_MarkupCompile.cache
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage_MarkupCompile.lref
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\App.baml
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\MainWindow.baml
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.g.resources
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.Properties.Resources.resources
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.csproj.GenerateResource.cache
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.csproj.CoreCompileInputs.cache
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.csproj.CopyComplete
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.exe
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.pdb
+D:\Ecole\Univers tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.csprojAssemblyReference.cache
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\agrd.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\amorti.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\Bilan.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\clse1.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\clse2.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\doc.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\fbk.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\g+.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\gm.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\home.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\info.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\inst.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\int.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\journal.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\n1.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\n2.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\Patrimoine.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso1.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso2.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso4.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\perso5.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\pp2.jpg
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\rd.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat1.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat2.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat4.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat5.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stat6.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stock.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stock1.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\stock3.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\twtr.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\ventes.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\ventes1.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\Assets\whs.png
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\UserInterfacePage.exe.config
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\UserInterfacePage.exe
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\UserInterfacePage.pdb
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignColors.dll
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignColors.pdb
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\MainWindow.g.cs
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\App.g.cs
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage_Content.g.cs
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage_MarkupCompile.cache
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage_MarkupCompile.lref
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\App.baml
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\MainWindow.baml
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.g.resources
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.Properties.Resources.resources
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.csproj.GenerateResource.cache
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.csproj.CopyComplete
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.exe
+D:\Ecole\Univers_tuto\repos\GestCo\UserInterfacePage\obj\Debug\UserInterfacePage.pdb
